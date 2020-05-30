@@ -21,6 +21,7 @@
 
 .status {
   display: flex;
+  align-items: center;
 }
 
 .hotel-name {
@@ -36,7 +37,7 @@
 
 .dollar {
   font-size: 20px;
-  color: blue;
+  color: #3968E5;
   font-weight: 600;
 }
 
@@ -64,6 +65,10 @@
   margin-left: 20px;
 }
 
+.bmark {
+  color: #3968E5;
+}
+
 .star {
   margin-top: 5px;
 }
@@ -82,7 +87,7 @@
   align-items: flex-end;
 }
 
-.mode {
+#mode {
   color: grey;
 }
 
@@ -107,6 +112,10 @@
   .hero-image {
     width: 120px;
     height: 120px;
+  }
+  .approval-icon {
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -140,5 +149,9 @@
   }
   .dollar {
     font-size: 25px;
+  }
+  .approval-icon {
+    width: 18px;
+    height: 18px;
   }
 }

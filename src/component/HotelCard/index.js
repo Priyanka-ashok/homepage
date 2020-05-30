@@ -53,7 +53,7 @@ const HotelCard = props => {
           {props.id === 1 ? (
             <i className="fa fa-bookmark"></i>
           ) : (
-            <i className="fa fa-bookmark"></i>
+            <i className="fa fa-bookmark bmark"></i>
           )}
         </section>
       </main>
