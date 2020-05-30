@@ -38,6 +38,15 @@
   bottom: -3px;
 }
 
+.bookmark, .home {
+  font-size: 25px;
+}
+
 .bookmark {
-  font-size: 20px;
+  color: grey;
+}
+.home {
+  color: #7da7f9;
+  border-bottom: 3px solid #7da7f9;
+  border-radius: 2px;
 }

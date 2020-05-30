@@ -11,7 +11,7 @@ const HotelCard = props => {
       <main className="hotel-card">
         <section>
           <img
-            src="https://images.unsplash.com/photo-1590688466449-12394418ecfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            src="../hotel.jpeg"
             alt="imag-1"
             className="hero-image"
           />
@@ -51,9 +51,9 @@ const HotelCard = props => {
         </section>
         <section className="bookmark-icon">
           {props.id === 1 ? (
-            <i class="fa fa-bookmark"></i>
+            <i className="fa fa-bookmark"></i>
           ) : (
-            <i class="fa fa-bookmark"></i>
+            <i className="fa fa-bookmark"></i>
           )}
         </section>
       </main>
