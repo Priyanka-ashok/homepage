@@ -4,10 +4,21 @@ import "./header.css";
 export const Header = props => {
   return (
     <div className="homepage-header">
-      <header className="ham-bar">
-        <div className="hamburger"><div id="ham-1"></div></div>
-        <div className="hamburger"><div></div></div>
-        <div className="hamburger"><div id="ham-3"></div></div>
+      <header className="header">
+        <article className="ham-bar">
+          <div className="hamburger">
+            <div id="ham-1"></div>
+          </div>
+          <div className="hamburger">
+            <div></div>
+          </div>
+          <div className="hamburger">
+            <div id="ham-3"></div>
+          </div>
+        </article>
+        <article>
+          <i className="fa fa-bell bell-icon"></i>
+        </article>
       </header>
       <nav className="navbar">
         <a href="/acc">
@@ -22,7 +33,7 @@ export const Header = props => {
       </section>
       <section>
         <article className="destination">
-          <i className="fa fa-map-marker map" ></i>
+          <i className="fa fa-map-marker map"></i>
           <p className="text">Your Destination</p>
         </article>
       </section>

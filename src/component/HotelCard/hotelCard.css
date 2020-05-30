@@ -1,7 +1,10 @@
+.container {
+  margin-top: 30px;
+}
+
 .hotel-card {
   display: flex;
-  margin: 30px 0 20px 0;
-  justify-content: space-between;
+  margin: 0 0 20px 0;
 }
 
 .hero-image {
@@ -13,20 +16,22 @@
 .approval-icon {
   height: 15px;
   width: 15px;
+  padding-left: 5px;
 }
 
-.hey {
+.status {
   display: flex;
 }
 
 .hotel-name {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .range {
   font-size: 10px;
   color: grey;
   font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .dollar {
@@ -43,21 +48,97 @@
   border-radius: 4px;
   font-weight: 600;
 }
-.facility li  {
-  padding: 8px 0 8px 7px;
-}
 
-ul li {
-  margin:0;
-  padding: 0;
-  text-indent: 0;
-  list-style-type: 0;
-  border: 0;
-  outline: 0;
-  list-style-position: inside; 
+.facility li {
+  padding: 8px 10px 8px 7px;
 }
 
 .card {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card,
+.bookmark-icon {
+  margin-left: 20px;
+}
+
+.star {
+  margin-top: 5px;
+}
+.star-yellow {
+  color: #f4a20c;
+  margin-right: 5px;
+}
+
+.star-gray {
+  color: grey;
+  margin-right: 5px;
+}
+
+.rates {
+  display: flex;
+  align-items: flex-end;
+}
+
+.mode {
+  color: grey;
+}
+
+@media only screen and (max-width: 414px) and (min-width: 375px) {
+  .hotel-name {
+    font-size: 16px;
+  }
+  .range,
+  .facility {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 414px) {
+  .hotel-name {
+    font-size: 18px;
+  }
+  .range,
+  .facility {
+    font-size: 14px;
+  }
+  .hero-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .hotel-name {
+    font-size: 20px;
+  }
+  .range,
+  .facility {
+    font-size: 16px;
+  }
+  .hero-image {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 768px) {
+  .hotel-name {
+    font-size: 20px;
+  }
+  .range,
+  .facility {
+    font-size: 18px;
+  }
+  .hero-image {
+    width: 180px;
+    height: 180px;
+  }
+  .star {
+    margin-top: 10px;
+  }
+  .dollar {
+    font-size: 25px;
+  }
 }

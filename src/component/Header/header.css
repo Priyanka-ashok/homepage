@@ -1,8 +1,17 @@
 .homepage-header {
   background-color: #7da7f9;
   padding: 20px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
   border-radius: 0 0 25px 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bell-icon {
+  color: white;
 }
 
 .ham-bar {
@@ -58,7 +67,7 @@
 
 .heading {
   color: white;
-  margin: 25px 0 0 15px;
+  margin: 25px 0 0 0px;
 }
 
 .title {
@@ -67,6 +76,7 @@
 
 .destination {
   display: flex;
+  align-items: center;
   border: none;
   border-radius: 10px;
   padding: 12px 25px;
