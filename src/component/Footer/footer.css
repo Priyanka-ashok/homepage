@@ -1,0 +1,43 @@
+.logo {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.footer-main {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 5px #888;
+}
+
+.add {
+  border: 2px solid grey;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 3px;
+}
+
+.add:before {
+  content: "+";
+  position: absolute;
+  color: grey;
+  font-size: 20px;
+  font-weight: 600;
+  left: 4px;
+  bottom: -3px;
+}
+
+i {
+  font-size: 20px;
+}

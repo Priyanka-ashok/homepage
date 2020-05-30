@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Header, Topbar } from "./component/Header";
+import HotelCard from "./component/HotelCard";
+import Footer from "./component/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header title="Wildan" />
+      <Topbar />
+      <div className="App">
+        <HotelCard dollar="$60" hotelName="The Rose Hotel" id={1} rooms={2} facility={10} distance="10m"/>
+        <HotelCard dollar="$145" hotelName="Tretes Raya Hotel" id={2} rooms={2} facility={13} distance="2KM"/>
+      </div>
+      <Footer />
     </div>
   );
 }

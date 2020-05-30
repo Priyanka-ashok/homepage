@@ -1,0 +1,163 @@
+.homepage-header {
+  background-color: #7da7f9;
+  padding: 20px;
+  margin-bottom: 30px;  
+  border-radius: 0 0 25px 25px;
+}
+
+.ham-bar {
+  margin-bottom: 30px;
+}
+
+.hamburger div {
+  display: flex;
+  border-radius: 10px;
+  background-color: white;
+  height: 3px;
+  margin-bottom: 5px;
+  width: 25px;
+}
+
+#ham-1 {
+  width: 15px;
+}
+
+#ham-3 {
+  width: 15px;
+  transform: translate(10px);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 6px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.navbar a:first-child {
+  background-color: #5e87d6;
+}
+
+.selected {
+  height: 5px;
+  width: 5px;
+  background-color: #f4a20c;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.heading {
+  color: white;
+  margin: 25px 0 0 15px;
+}
+
+.title {
+  padding-bottom: 15px;
+}
+
+.destination {
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  color: white;
+  background-color: #bed2f9;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.map {
+  padding-right: 15px;
+}
+
+/* Top Bar  */
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.top-bar--text {
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+
+.results {
+  color: gray;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.more {
+  color: gray;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Media Queries.. */
+
+@media only screen and (max-width: 414px) and (min-width: 375px) {
+  .navbar a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 414px) {
+  .navbar a,
+  .title,
+  .text,
+  .top-bar--text,
+  .more {
+    font-size: 16px;
+  }
+  .selected {
+    height: 7px;
+    width: 7px;
+  }
+  .results {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .navbar a,
+  .title,
+  .text,
+  .top-bar--text,
+  .more {
+    font-size: 18px;
+  }
+  .results {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 768px) {
+  .navbar a,
+  .title,
+  .text,
+  .top-bar--text,
+  .more {
+    font-size: 20px;
+  }
+  .selected {
+    height: 10px;
+    width: 10px;
+  }
+  .results {
+    font-size: 18px;
+  }
+}
